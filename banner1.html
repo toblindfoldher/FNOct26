@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="banner.css" />
+    <title>Abercorris</title>
+    <meta name="description" content="Abercorris">
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+  </head>
+  <body>
+    <div class="fieldnotes"><img src="https://cdn.glitch.com/7bdc0786-c538-4689-b98e-871011718896/fieldnotes2.png" height="30"></div>
+    <div class="trail"><a href="escolta.html"><img src="https://cdn.glitch.com/7bdc0786-c538-4689-b98e-871011718896/back-yellow.png" height="30"></a></div>
+    <a-scene mindar-image="imageTargetSrc: https://cdn.glitch.com/7bdc0786-c538-4689-b98e-871011718896/swatch1.mind; filterMinCF: 0; filterBeta: 0.1;" 
+             color-space="sRGB" 
+             renderer="colorManagement: true, physicallyCorrectLights" 
+             vr-mode-ui="enabled: false" 
+             device-orientation-permission-ui="enabled: false">
+      <a-assets>
+        <a-asset-item id="slate" 
+        src="https://cdn.glitch.com/7bdc0786-c538-4689-b98e-871011718896/slate-ring.glb"></a-asset-item>
+        <img
+        id="text"
+        src="https://cdn.glitch.com/7bdc0786-c538-4689-b98e-871011718896/360-text-11.png"
+      />
+      </a-assets>
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-entity mindar-image-target="targetIndex: 0">
+      <a-gltf-model src="#slate"
+                animation-mixer
+                scale="1.2 1.2 1.2"
+                position="0 0 0"
+                rotation="0 0 0"
+                ></a-gltf-model>
+      <a-image src="#text"
+                height="0.75"
+                width="1.5"
+                position="0 -1.75 0"></a-image>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>

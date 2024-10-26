@@ -1,0 +1,99 @@
+body {
+    background-color: #313900;
+}
+
+.fieldnotes {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 95%;
+    color: #ffffff;
+    line-height: 95%;
+    z-index: 2;
+}
+
+.placename {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    max-width: 85vw;
+    font-family: "Jost", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 105%;
+    color: #ffffff;
+    z-index: 3;
+}
+
+.trail {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 5;
+}
+
+/* accordion display */
+
+input {
+    display: none;
+}
+
+label {
+    display: block;    
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: #ffffff;
+    transition: ease .5s;
+}
+
+.content {
+    padding: 0;
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    font-variation-settings:
+    "wdth" 100;
+    line-height: 130%;
+}
+
+input + label + .content {
+    display: none;
+}
+
+input:checked + label + .content {
+    display: block;
+}
+
+/* text */
+
+.fine {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.8rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    font-variation-settings:
+    "wdth" 100;
+    line-height: 130%;
+}
+
+h3 {
+    font-family: "Jost", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 95%;
+    color: #ffffff;
+}

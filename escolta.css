@@ -1,0 +1,255 @@
+body {
+    background: url('https://cdn.glitch.com/7bdc0786-c538-4689-b98e-871011718896/ganllwyd-bg-dark.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+/*    background-color: #313900; */
+    font-family: "Inconsolata", monospace;
+    font-size: 0.8rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-variation-settings:
+    "wdth" 100;
+    line-height: 130%;
+}
+
+/* navigation */
+
+.fieldnotes {
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 95%;
+    color: #ffffff;
+    line-height: 95%;
+    z-index: 4;
+}
+
+.trail {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 5;
+/*    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 95%;
+    color: #ffffff;
+    line-height: 95%;
+    z-index: 5;
+  */
+}
+
+/* accordion display */
+
+input {
+    display: none;
+}
+
+label {
+    display: block;    
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: #ffffff;
+    transition: ease .5s;
+}
+
+.content {
+    padding: 0;
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+    font-size: 0.8rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-variation-settings:
+    "wdth" 100;
+    line-height: 130%;
+}
+
+.content img {
+  width: 100%;
+  border: solid 1px;
+  border-color: #ffffff;
+  margin: 10px 0;
+}
+
+input + label + .content {
+    display: none;
+}
+
+input:checked + label + .content {
+    display: block;
+}
+
+/* grid */
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    align-content: center;
+    /* grid-template-columns: repeat(3, minmax(200px, 300px)); */
+
+}
+
+.item {
+    padding: 1rem;
+    border-bottom: 0.25px solid #ffffff;
+    text-align: left;
+}
+
+.all {
+    grid-column: 1 / 5;
+}
+
+.big {
+    grid-column: 1 / 4;
+}
+
+.small {
+    grid-column: 4 / 5;
+    text-align: center;
+}
+
+
+.half-1 {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+.half-2 {
+    grid-column: 3 / 5;
+    text-align: center;
+}
+
+
+/* text */
+
+h1 {
+    font-family: "Jost", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 95%;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: "Jost", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 95%;
+    color: #ffffff;
+}
+
+h3 {
+    font-family: "Jost", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 95%;
+    color: #ffffff;
+}
+
+h4 {
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 95%;
+    color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.8rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-variation-settings:
+    "wdth" 100;
+    line-height: 130%;
+}
+
+.loc {
+    font-family: "Jost", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 105%;
+    color: #ffffff;
+    margin: 5px 5px;
+}
+
+.fine {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.8rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-variation-settings:
+    "wdth" 100;
+    line-height: 130%;
+    margin: 16px 0px;
+}
+
+.yellow {
+    color: #efd753;
+ }
+
+/* links */
+
+a {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.8rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+a:hover {
+    color: #efd753;
+}
+
+/* logos */
+
+.logos {
+    display: flex;
+    list-style: none;
+    margin: 3;
+    padding: 0;
+    overflow: auto;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logos li {
+    float: left;
+    padding: 0px 2%;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Abercorris</title>
+    <meta name="description" content="Abercorris" />
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="360.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="placename">
+      <a href="https://sunny-loving-forest.glitch.me"
+        ><img
+          src="https://cdn.glitch.global/7bdc0786-c538-4689-b98e-871011718896/fieldnotes2.png"
+          height="30" /></a
+      ><br />
+      Abercorris National Nature Reserve
+    </div>
+    <div class="trail">
+      <a href="10-karilongan-360.html"
+        ><img
+          src="https://cdn.glitch.global/7bdc0786-c538-4689-b98e-871011718896/back-ltgreen.png"
+          height="30"
+        />
+      </a>
+      <a href="12-tanycoed-360.html"
+        ><img
+          src="https://cdn.glitch.global/7bdc0786-c538-4689-b98e-871011718896/next-ltgreen.png"
+          height="30"
+      /></a>
+    </div>
+    <a-scene background="color: #ECECEC">
+      <a-assets>
+        <img
+          id="abercorris"
+          src="https://cdn.glitch.global/7bdc0786-c538-4689-b98e-871011718896/11-Abercorris-360-1200.jpg"
+        />
+        <img
+        id="text"
+        src="https://cdn.glitch.com/7bdc0786-c538-4689-b98e-871011718896/360-text-11.png"
+      />
+      </a-assets>
+      <a-sky src="#abercorris"></a-sky>
+      <a-image src="#text"
+      height="1"
+      width="2"
+      position="0 1.5 -2"></a-image>
+    </a-scene>
+  </body>
+</html>
