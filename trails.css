@@ -75,6 +75,13 @@ label {
     line-height: 130%;
 }
 
+.content img {
+    width: 100%;
+    border: solid 1px;
+    border-color: #ffffff;
+    margin: 10px 0;
+  }
+
 input + label + .content {
     display: none;
 }
